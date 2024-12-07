@@ -1,6 +1,7 @@
 package com.pramukh.footballrecoverysystem.Model;
 
 
+import com.pramukh.footballrecoverysystem.Model.PlayerEntity.PlayersEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

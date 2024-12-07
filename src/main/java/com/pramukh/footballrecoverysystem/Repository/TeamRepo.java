@@ -14,6 +14,4 @@ public interface TeamRepo extends JpaRepository<TeamEntity,Integer> {
     @Query("SELECT t FROM TeamEntity t WHERE LOWER(t.name) = LOWER(:name)")
     TeamEntity findBynameIgnoreCase(String name);
 
-
-
 }

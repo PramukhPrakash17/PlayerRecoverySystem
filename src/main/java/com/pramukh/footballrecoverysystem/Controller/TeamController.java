@@ -88,8 +88,8 @@ public class TeamController {
         }
     }
 
-    @GetMapping("/deleteTeam")
-    public ResponseEntity<?> deeleteTeam(@RequestParam String name)
+    @DeleteMapping("/deleteTeam")
+    public ResponseEntity<?> deleteTeam(@RequestParam String name)
     {
         try
         {

@@ -1,5 +1,6 @@
-package com.pramukh.footballrecoverysystem.Model;
+package com.pramukh.footballrecoverysystem.Model.PlayerEntity;
 
+import com.pramukh.footballrecoverysystem.Model.InjuriesEntity;
 import com.pramukh.footballrecoverysystem.Model.TeamEntities.TeamEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
