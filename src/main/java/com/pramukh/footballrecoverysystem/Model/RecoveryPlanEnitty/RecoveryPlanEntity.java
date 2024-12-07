@@ -1,5 +1,6 @@
-package com.pramukh.footballrecoverysystem.Model;
+package com.pramukh.footballrecoverysystem.Model.RecoveryPlanEnitty;
 
+import com.pramukh.footballrecoverysystem.Model.InjuryEntity.InjuryEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -28,5 +29,5 @@ public class RecoveryPlanEntity {
 
     @OneToOne
     @JoinColumn(name="injury_id")
-    private InjuriesEntity injuriesEntity;
+    private InjuryEntity injuryEntity;
 }

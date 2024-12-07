@@ -3,7 +3,7 @@ package com.pramukh.footballrecoverysystem.Controller;
 import com.pramukh.footballrecoverysystem.ExceptionHandling.TeamExistsException;
 import com.pramukh.footballrecoverysystem.ExceptionHandling.TeamNotFoundException;
 import com.pramukh.footballrecoverysystem.Model.TeamEntities.TeamEntity;
-import com.pramukh.footballrecoverysystem.Model.TeamEntities.UpdateDTO;
+import com.pramukh.footballrecoverysystem.Model.TeamEntities.UpdateTeamDTO;
 import com.pramukh.footballrecoverysystem.Service.TeamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -52,7 +52,7 @@ public class TeamController {
         }
     }
 
-    @GetMapping("/getTeams")
+    @GetMapping("/getTeam")
     public ResponseEntity<?> getTeam(@RequestParam String name)
     {
         try
@@ -71,11 +71,11 @@ public class TeamController {
     }
 
     @PutMapping("/updateTeam")
-    public ResponseEntity<?> updateTeam(@RequestBody UpdateDTO updateDTO)
+    public ResponseEntity<?> updateTeam(@RequestBody UpdateTeamDTO updateTeamDTO)
     {
         try
         {
-            TeamEntity updatedTeam = teamService.updateTeam(updateDTO);
+            TeamEntity updatedTeam = teamService.updateTeam(updateTeamDTO);
             return ResponseEntity.status(HttpStatus.OK).body(updatedTeam);
         }
         catch (TeamNotFoundException e)

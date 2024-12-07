@@ -1,6 +1,6 @@
 package com.pramukh.footballrecoverysystem.Model.PlayerEntity;
 
-import com.pramukh.footballrecoverysystem.Model.InjuriesEntity;
+import com.pramukh.footballrecoverysystem.Model.InjuryEntity.InjuryEntity;
 import com.pramukh.footballrecoverysystem.Model.TeamEntities.TeamEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -33,5 +33,5 @@ public class PlayersEntity {
     private TeamEntity teamEntity;
 
     @OneToMany(mappedBy = "playersEntity", cascade = CascadeType.ALL)
-    private List<InjuriesEntity> injuriesEntityList;
+    private List<InjuryEntity> injuryEntityList;
 }

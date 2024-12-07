@@ -1,4 +1,4 @@
-package com.pramukh.footballrecoverysystem.Model;
+package com.pramukh.footballrecoverysystem.Model.InjuryEntity;
 
 
 import com.pramukh.footballrecoverysystem.Model.PlayerEntity.PlayersEntity;
@@ -14,7 +14,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class InjuriesEntity {
+public class InjuryEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,7 +30,6 @@ public class InjuriesEntity {
     private Date date_reported;
 
     @Column(nullable = false)
-
     private String recovery_status="Pending";
 
     @ManyToOne
