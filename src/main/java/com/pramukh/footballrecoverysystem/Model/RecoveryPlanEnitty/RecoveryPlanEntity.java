@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -20,9 +22,9 @@ public class RecoveryPlanEntity {
     private String description;
 
     @Column(nullable = false)
-    private String expected_return_date;
+    private Date expected_return_date;
 
-    private String actual_return_date;
+    private Date actual_return_date;
 
     @Column(nullable = false)
     private String status="InProgress";
