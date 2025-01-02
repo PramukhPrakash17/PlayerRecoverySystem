@@ -1,49 +1,18 @@
-Overview
+**Player Recovery System**
 
-The Player Recovery System is a backend system built with Spring Boot to manage football players, injuries, recovery plans, and teams. The application uses JWT-based authentication and role-based access control to provide secure and restricted access to features. The system is designed to be modular, scalable, and secure.
+**Overview**
 
-Features
+The Player Recovery System is a comprehensive backend project designed to streamline and manage the recovery process of football players. This system caters to both team administrators and medical staff, offering tools for managing players, tracking injuries, and creating recovery plans. The project utilizes robust backend technologies and follows best practices for scalability and maintainability.
 
-Team Management:
+**Features**
 
-Add, view, update, and delete teams.
+Team Management allows adding, updating, and deleting teams while viewing details of teams, including their players. Player Management supports adding, updating, and deleting players, assigning them to specific teams, and viewing their details, including injury history. Injury and Recovery Management facilitates recording and managing player injuries, assigning and tracking recovery plans, and monitoring recovery progress with status updates.
 
-Player Management:
+**Tools and Technologies Used**
 
-Add, view, update, and delete players.
-
-Link players to specific teams.
-
-Injury Management:
-
-Add, view, update, and delete injuries.
-
-Link injuries to players.
-
-Recovery Plan Management:
-
-Add, view, update, and delete recovery plans.
-
-Link recovery plans to injuries.
-
-Authentication and Authorization:
-
-Secure endpoints with JWT tokens.
-
-Role-based access control for ADMIN and USER roles.
-
-Technologies Used
-
-Spring Boot
-
-Spring Security (JWT-based Authentication and RBAC)
-
-Spring Data JPA
-
-H2 Database (for development/testing)
-
-MySQL (for production)
-
-Lombok
-
-Maven
+Backend Framework: Spring Boot
+Database: MySQL
+Authentication: Spring Security with JWT
+ORM: Hibernate (JPA)
+Build Tool: Maven
+Version Control: Git
